@@ -21,7 +21,7 @@ $(document).ready(function(){
                                             '<span class="mx-2">'+individualTool.rating+'</span>'+
                                         '</div>'+
                                         '<div class="visit-button">'+
-                                            '<a href="'+individualTool.url+'"><span class="mx-5">visit</span></a>'+
+                                            '<a href="'+individualTool.url+'" target="_blank"><span class="mx-5">visit</span></a>'+
                                         '</div>'+
                                     '</div>'+
                                 '</div>'+
