@@ -1,16 +1,106 @@
-let tool_data=[
+let toolData=[
     {
         "name": "dummy name",
+        "techCategory": "abc",
         "description": "dummy description here",
-        "url": "the dummy url here",
+        "url": "https://www.youtube.com/",
         "rating": 4,
-        "image": "dummy image path"
+        "image": "..."
     },
     {
         "name": "dummy name 2",
+        "techCategory": "xyz",
         "description": "dummy description here 2",
-        "url": "the dummy url here 2",
+        "url": "https://www.google.com/",
         "rating": 5,
-        "image": "dummy image path"
+        "image": "..."
+    },
+    {
+        "name": "dummy name 2",
+        "techCategory": "xyz",
+        "description": "dummy description here 2",
+        "url": "https://www.google.com/",
+        "rating": 5,
+        "image": "..."
+    },
+    {
+        "name": "dummy name 2",
+        "techCategory": "xyz",
+        "description": "dummy description here 2",
+        "url": "https://www.google.com/",
+        "rating": 5,
+        "image": "..."
+    },
+    {
+        "name": "dummy name 2",
+        "techCategory": "xyz",
+        "description": "dummy description here 2",
+        "url": "https://www.google.com/",
+        "rating": 5,
+        "image": "..."
+    },
+    {
+        "name": "dummy name 2",
+        "techCategory": "xyz",
+        "description": "dummy description here 2",
+        "url": "https://www.google.com/",
+        "rating": 5,
+        "image": "..."
+    },
+    {
+        "name": "dummy name 2",
+        "techCategory": "xyz",
+        "description": "dummy description here 2",
+        "url": "https://www.google.com/",
+        "rating": 5,
+        "image": "..."
+    },
+    {
+        "name": "dummy name 2",
+        "techCategory": "xyz",
+        "description": "dummy description here 2",
+        "url": "https://www.google.com/",
+        "rating": 5,
+        "image": "..."
+    },
+    {
+        "name": "dummy name 2",
+        "techCategory": "xyz",
+        "description": "dummy description here 2",
+        "url": "https://www.google.com/",
+        "rating": 5,
+        "image": "..."
+    },
+    {
+        "name": "dummy name 2",
+        "techCategory": "xyz",
+        "description": "dummy description here 2",
+        "url": "https://www.google.com/",
+        "rating": 5,
+        "image": "..."
+    },
+    {
+        "name": "dummy name 2",
+        "techCategory": "xyz",
+        "description": "dummy description here 2",
+        "url": "https://www.google.com/",
+        "rating": 5,
+        "image": "..."
+    },
+    {
+        "name": "dummy name 2",
+        "techCategory": "xyz",
+        "description": "dummy description here 2",
+        "url": "https://www.google.com/",
+        "rating": 5,
+        "image": "..."
+    },
+    {
+        "name": "dummy name 2",
+        "techCategory": "xyz",
+        "description": "dummy description here 2",
+        "url": "https://www.google.com/",
+        "rating": 5,
+        "image": "..."
     },
 ]

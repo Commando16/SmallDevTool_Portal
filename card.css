@@ -73,7 +73,11 @@ h1, h2, h3, span, p {
     object-fit: cover;
 }
 
-.card .content .cardContent h3 {
+.content{
+    transform: translateY(40px);
+}
+
+.card .content .cardContent .visible-details h3 {
     color: #0f0058;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -84,7 +88,7 @@ h1, h2, h3, span, p {
     line-height: 1.1em;
 }
 
-.card .content .cardContent .tech-name {
+.card .content .cardContent .visible-details .tech-name {
     color: #0f0058;
     font-size: 12px;
     font-weight: 300;
@@ -98,9 +102,10 @@ h1, h2, h3, span, p {
 }
 
 .card .hidden-details {
-    transform: translateY(10px);
+    transform: translateY(-40px);
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.4s;
+    transition-timing-function: ease-in;
 }
 
 .card .hidden-details .description{
@@ -115,7 +120,7 @@ h1, h2, h3, span, p {
     opacity: 1;
 }
 
-.rating-parent{
+.rating-parent {
     font-size: 18px;
     color: #0f0058;
 }
@@ -133,6 +138,10 @@ h1, h2, h3, span, p {
     background-color: #0f0058;
     border: 0px solid lightblue;
     border-radius: 50px;
+}
+
+.visit-button a {
+    text-decoration: none;
 }
 
 .visit-button span {
