@@ -1,106 +1,22 @@
 let toolData=[
     {
-        "name": "dummy name",
-        "techCategory": "abc",
-        "description": "dummy description here",
-        "url": "https://www.youtube.com/",
-        "rating": 4,
-        "image": "..."
+        "name": "Django Query Object Beautifier",
+        "techCategory": "Python (Django)",
+        "description": "A beautifier for your Django Query objects",
+        "url": "https://commando16.github.io/SmallDevTool_JSON_beautifier/",
+        "rating": 5,
+        "image": "default_image",
+        "type": "tool",
+        "tags": "django, query, object, beautifier, json, python"
     },
     {
-        "name": "dummy name 2",
-        "techCategory": "xyz",
-        "description": "dummy description here 2",
-        "url": "https://www.google.com/",
+        "name": "keyframes.app",
+        "techCategory": "CSS",
+        "description": "A tool for animating html element with CSS",
+        "url": "https://keyframes.app/animate/",
         "rating": 5,
-        "image": "..."
-    },
-    {
-        "name": "dummy name 2",
-        "techCategory": "xyz",
-        "description": "dummy description here 2",
-        "url": "https://www.google.com/",
-        "rating": 5,
-        "image": "..."
-    },
-    {
-        "name": "dummy name 2",
-        "techCategory": "xyz",
-        "description": "dummy description here 2",
-        "url": "https://www.google.com/",
-        "rating": 5,
-        "image": "..."
-    },
-    {
-        "name": "dummy name 2",
-        "techCategory": "xyz",
-        "description": "dummy description here 2",
-        "url": "https://www.google.com/",
-        "rating": 5,
-        "image": "..."
-    },
-    {
-        "name": "dummy name 2",
-        "techCategory": "xyz",
-        "description": "dummy description here 2",
-        "url": "https://www.google.com/",
-        "rating": 5,
-        "image": "..."
-    },
-    {
-        "name": "dummy name 2",
-        "techCategory": "xyz",
-        "description": "dummy description here 2",
-        "url": "https://www.google.com/",
-        "rating": 5,
-        "image": "..."
-    },
-    {
-        "name": "dummy name 2",
-        "techCategory": "xyz",
-        "description": "dummy description here 2",
-        "url": "https://www.google.com/",
-        "rating": 5,
-        "image": "..."
-    },
-    {
-        "name": "dummy name 2",
-        "techCategory": "xyz",
-        "description": "dummy description here 2",
-        "url": "https://www.google.com/",
-        "rating": 5,
-        "image": "..."
-    },
-    {
-        "name": "dummy name 2",
-        "techCategory": "xyz",
-        "description": "dummy description here 2",
-        "url": "https://www.google.com/",
-        "rating": 5,
-        "image": "..."
-    },
-    {
-        "name": "dummy name 2",
-        "techCategory": "xyz",
-        "description": "dummy description here 2",
-        "url": "https://www.google.com/",
-        "rating": 5,
-        "image": "..."
-    },
-    {
-        "name": "dummy name 2",
-        "techCategory": "xyz",
-        "description": "dummy description here 2",
-        "url": "https://www.google.com/",
-        "rating": 5,
-        "image": "..."
-    },
-    {
-        "name": "dummy name 2",
-        "techCategory": "xyz",
-        "description": "dummy description here 2",
-        "url": "https://www.google.com/",
-        "rating": 5,
-        "image": "..."
-    },
+        "image": "https://keyframes.app/img/icons/icon-192.png",
+        "type": "tool",
+        "tags": "css, animate, element, html"
+    }
 ]
