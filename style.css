@@ -52,8 +52,13 @@
 }
 
 #search-input {
+    color: #0f0058;
     background-color: transparent;
     border: none;
     outline: none;
     width: 100%;
+}
+
+.tab div span{
+    color: #0f0058;
 }
