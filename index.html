@@ -65,10 +65,10 @@
               <input type="text" id="search-input" placeholder="Search . . .">
             </div>
           </div>
-          <div class="tab d-flex justify-content-center mb-2">
-            <div class="mx-2"><span>All</span></div>
-            <div class="mx-2"><span>Tools</span></div>
-            <div class="mx-2"><span>Docs</span></div>
+          <div class="card-tab-parent d-flex justify-content-center align-items-center mb-2">
+            <div class="card-tab mx-2" data-card-type="all"><span class="active">All</span></div>
+            <div class="card-tab mx-2" data-card-type="tools"><span>Tools</span></div>
+            <div class="card-tab mx-2" data-card-type="docs"><span>Docs</span></div>
           </div>
           <div id="card-parent" class="d-flex flex-wrap justify-content-center px-4 mb-4">
             <!-- Dynamic content here -->           
@@ -80,7 +80,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Bootstrap JS end -->
 
-    <script src="./tool_data.js"></script>
+    <script src="./card_data.js"></script>
     <script src="./functionality.js"></script>
 
   </body>

@@ -59,6 +59,12 @@
     width: 100%;
 }
 
-.tab div span{
+.card-tab-parent .card-tab span{
     color: #0f0058;
+}
+
+.card-tab-parent span.active{
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: 0.1s;
 }

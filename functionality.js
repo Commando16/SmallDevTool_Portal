@@ -1,44 +1,70 @@
 $(document).ready(function(){
     let searchBar = $("#search-input");
     let cardParent = $("#card-parent");
+    let currentSelectedTab;
     let cardsHtml = ""
     
     // initial data load
-    loadCardData();
+    loadCardData(cardType="all");
 
     searchBar.change(function(){
         alert(searchBar.val());
     });
 
-    function loadCardData(){
-        toolData.forEach(function(individualTool){
-            let tool_image;
+    $(".card-tab").click(function(){
+        currentSelectedTab = $(this);
+        cardType = currentSelectedTab.attr("data-card-type");
+        
+        $(".card-tab").each(function(tab_index, tab){
+            $(tab).children("span").removeClass("active");
+        });
+        currentSelectedTab.children("span").addClass("active");
+        loadCardData(cardType);
+    });
+
+
+    function loadCardData(cardType){
+
+        // removing any previous data in "cardsHtml" 
+        cardsHtml = "";
+
+        if(cardType == "tools"){ 
+            cardData = toolData;
+        }else if(cardType == "docs"){
+            cardData = docData;
+        }else{
+            cardData = toolData.concat(docData);
+            console.log(cardData);
+        }
+
+        cardData.forEach(function(individualCardData){
+            let cardAvatarImage;
             
-            if(individualTool.image !== "default_image"){
-                tool_image = individualTool.image;
+            if(individualCardData.image !== "default_image"){
+                cardAvatarImage = individualCardData.image;
             }else{
-                tool_image = "./assets/site_images/gear_image.svg";
+                cardAvatarImage = "./assets/site_images/gear_image.png";
             }
             
             cardsHtml+= '<div class="card m-2">'+
                             '<div class="content">'+
-                                '<div class="img d-flex justify-content-center align-items-center"><img src="'+tool_image+'" alt="..."></div>'+
+                                '<div class="img d-flex justify-content-center align-items-center"><img src="'+cardAvatarImage+'" alt="..."></div>'+
                                 '<div class="cardContent">'+
                                     '<div class="visible-details">'+
-                                        '<h3>'+individualTool.name+'</h3>'+
-                                        '<p class="tech-name">'+individualTool.techCategory+'</p>'+
+                                        '<h3>'+individualCardData.name+'</h3>'+
+                                        '<p class="tech-name">'+individualCardData.techCategory+'</p>'+
                                     '</div>'+
                                     '<div class="hidden-details d-flex flex-column justify-content-center align-items-center">'+
                                         '<div class="description-parent">'+
-                                            '<p class="description">'+individualTool.description+'</p>'+
+                                            '<p class="description">'+individualCardData.description+'</p>'+
                                         '</div>'+
                                         '<div class="d-flex justify-content-between w-100">'+
                                             '<div class="rating-parent d-flex align-items-center">'+
                                                 '<img src="./assets/site_images/star.svg" alt="...">'+
-                                                '<span class="mx-2">'+individualTool.rating+'</span>'+
+                                                '<span class="mx-2">'+individualCardData.rating+'</span>'+
                                             '</div>'+
                                             '<div class="visit-button">'+
-                                                '<a href="'+individualTool.url+'" target="_blank"><span class="mx-5">visit</span></a>'+
+                                                '<a href="'+individualCardData.url+'" target="_blank"><span class="mx-5">visit</span></a>'+
                                             '</div>'+
                                         '</div>'+
                                     '</div>'+

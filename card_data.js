@@ -1,4 +1,4 @@
-let toolData=[
+let toolData = [
     {
         "name": "Django Query Object Beautifier",
         "techCategory": "Python (Django)",
@@ -42,13 +42,26 @@ let toolData=[
     {
         "name": "webgradients",
         "techCategory": "UI (Color)",
-        "description": "Fresh UI gradiant every time you open it.",
+        "description": "Many different Soothing color gradient.",
         "url": "https://webgradients.com/",
-        "rating": 4,
+        "rating": 5,
         "image": "https://webgradients.com/img/other/logos/webgradients_logo.png",
         "type": "tool",
         "tags": "ui, color, pallet, colors, gradients"
     },
+    {
+        "name": "uigradients",
+        "techCategory": "UI (Color)",
+        "description": "Fresh UI gradient every time you open it.",
+        "url": "https://uigradients.com/",
+        "rating": 4,
+        "image": "http://uigradients.com/static/images/uigradients.jpg",
+        "type": "tool",
+        "tags": "ui, color, pallet, colors, gradients"
+    },
+]
+
+let docData = [
     
 ]
 
