@@ -68,3 +68,11 @@
     font-size: 1.05rem;
     transition: 0.1s;
 }
+
+#no-data-text{
+    color: lightgrey;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 28px;
+}
