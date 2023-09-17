@@ -8,7 +8,13 @@ $(document).ready(function(){
     loadCardData(cardType="all", isFilter=false);
 
     searchBar.change(function(){
-        loadCardData( $(currentSelectedTab).attr("data-card-type"), isFilter=true, filterString=searchBar.val());
+        let inputFilterString=searchBar.val()
+
+        if (inputFilterString!=""){
+            loadCardData( $(currentSelectedTab).attr("data-card-type"), isFilter=true, filterString=inputFilterString);
+        } else{
+            loadCardData( $(currentSelectedTab).attr("data-card-type"), isFilter=false);
+        }
     });
 
     $(".card-tab").click(function(){
