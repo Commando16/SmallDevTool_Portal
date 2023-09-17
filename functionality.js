@@ -44,7 +44,13 @@ $(document).ready(function(){
             let eligibleCard;
 
             if(isFilter){
-                eligibleCard = check_eligibility(filteringWords=filteringSet, cardName=individualCardData.name, cardDescription=individualCardData.description, cardTags=individualCardData.tags);
+                eligibleCard = check_eligibility(
+                                    filteringWords=filteringSet, 
+                                    cardName=individualCardData.name, 
+                                    cardDescription=individualCardData.description, 
+                                    cardCategory=individualCardData.techCategory,
+                                    cardTags=individualCardData.tags
+                                );
             }
 
             if (!isFilter || eligibleCard){
@@ -91,13 +97,14 @@ $(document).ready(function(){
         }
     }
 
-    function check_eligibility(filteringWords, cardName, cardDescription, cardTags){        
+    function check_eligibility(filteringWords, cardName, cardCategory, cardDescription, cardTags){        
         let cardNameSet = new Set(cardName.split(" "));
         let cardDescriptionSet = new Set(cardDescription.split(" "));
+        let cardCategorySet = new Set(cardCategory.split(" "))
         let cardTagsSet = new Set(cardTags.split(","));
 
         for(let word of filteringWords.keys()){
-            if( cardNameSet.has(word) || cardDescriptionSet.has(word) || cardTagsSet.has(word) ){
+            if( cardNameSet.has(word) || cardDescriptionSet.has(word) || cardCategorySet.has(word) || cardTagsSet.has(word) ){
                 return true;
             }
         }
